@@ -1,0 +1,1 @@
+pantry,food,shopping,list,batches,expiration,storage,barcode,groceries,widget

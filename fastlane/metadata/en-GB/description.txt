@@ -1,0 +1,11 @@
+Keep track of pantry batches and shopping items in IcePantryOrbit for iPhone and iPad, with an Apple Watch companion.
+
+Add food with a name, quantity, unit, storage location and printed date. Shelves orders batches by date, highlights the earliest and lets you search or filter by storage location and deadline. Record food as used or discarded, and optionally add its name to your shopping list.
+
+Find products in the on-device catalogue or search Open Food Facts by name, brand or barcode. You can also enter product details by hand or scan a barcode on a supported device.
+
+Market keeps shopping items in one list, where you can mark purchases and clear purchased items. Ledger shows movement history and counts of use and discard entries from the past seven days.
+
+On Apple Watch, see up to five upcoming batches and mark outstanding shopping items as purchased. A small or medium widget shows the earliest batch, with the next batch also shown in the medium widget.
+
+The app interface is in English. Pantry, shopping and movement data are stored locally.

@@ -1,0 +1,7 @@
+The interface is in English. No account or onboarding is required; a fresh install starts with an empty pantry, shopping list and ledger.
+
+To review, add a batch with a product name, positive whole-number quantity, unit, storage location and printed date. Open its details to edit it or record use or discard; a movement can also add its name to Market. Add and check shopping items in Market, then inspect movement entries and seven-day entry counts in Ledger.
+
+The catalog supports local and Open Food Facts searches, manual product entry, barcode digits and camera scanning on supported devices. Camera permission is requested when scanning. If scanning is unavailable or denied, enter barcode digits in search. Searches and product images may use the network; batch details can link to Open Food Facts for numeric barcodes.
+
+The widget reads an app-group snapshot. The watch receives a phone snapshot through WatchConnectivity and can send or queue purchase updates. Debug screenshot launches use separate demo data and bypass normal widget and watch distribution; populated watch views require normal phone-to-watch sync.
