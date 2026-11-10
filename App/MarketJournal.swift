@@ -18,7 +18,7 @@ struct MarketPage: View {
         ScrollView {
             VStack(alignment:.leading,spacing:20) {
                 LedgerHeader(title:"Market list",index:"02")
-                Text("Plan your trip here. Check items off in the aisle using your phone or Apple Watch.").font(.system(.body,design:.serif)).foregroundStyle(Paper.moss)
+                Text("Plan your trip here. Check items off in the aisle using your phone.").font(.system(.body,design:.serif)).foregroundStyle(Paper.moss)
                 HStack {
                     TextField("What do you need?",text:$input).focused($focused).onSubmit(add)
                     Button { add() } label: { Image(systemName:"plus.circle.fill").font(.title) }.disabled(!canAdd).accessibilityLabel("Add to shopping list")

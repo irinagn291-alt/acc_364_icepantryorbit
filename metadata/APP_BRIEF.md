@@ -1,9 +1,9 @@
-<!-- gf-brief source=7d702c268d110b6693bc96825b2c07a3b926ad927c1d5f91be13b5bb5df9ad30 written=2026-11-10T19:37:16+03:00 -->
+<!-- gf-brief source=46f4526827ca362328f583828b119521ce85d5b25f66f203b58afefcda47ec1c written=2026-11-10T21:21:37+03:00 -->
 # IcePantryOrbit
 
 ## What it is
 
-IcePantryOrbit is a pantry inventory and shopping-list app for people who want to keep track of food quantities and the dates printed on packages. It lets them record food used or discarded, review their history, and check off shopping items on an iPhone or Apple Watch.
+IcePantryOrbit is a pantry inventory and shopping-list app for people who want to keep track of food quantities and the dates printed on packages. It lets them record food used or discarded, review their history, and check off shopping items on an iPhone or iPad.
 
 ## Launch and onboarding
 
@@ -68,7 +68,7 @@ When scanning is unavailable, “Scanner unavailable” appears with an explanat
 
 ### “Market” — “Market list”
 
-The screen says “Plan your trip here. Check items off in the aisle using your phone or Apple Watch.”
+The screen says “Plan your trip here. Check items off in the aisle using your phone.”
 
 - “What do you need?” accepts an item. The plus button, labelled for accessibility “Add to shopping list”, adds it to “To pick up”.
 - “Find a packaged product” opens “Food catalog”; selecting a product adds its name to the list.
@@ -83,13 +83,6 @@ The screen says “Plan your trip here. Check items off in the aisle using your 
 
 Before a movement is recorded, the screen shows “No movements yet” and “Open a batch on your shelf to record how much you used or discarded.”
 
-### Apple Watch
-
-The watch app has two pages:
-
-- “IcePantryOrbit” shows “Use first” and up to five batches in printed-date order. If it has not received pantry data, it says “Open IcePantryOrbit on your iPhone to sync.” If the synced shelves are empty, it says “Your shelves are empty. Add a batch on iPhone.” “Refresh from iPhone” requests an update.
-- “Market” shows “Check off purchases”. Tapping an item marks it purchased on the iPhone. An empty list says “Your shopping list is empty.” A pending change shows “Awaiting sync · [number]”.
-
 ### “Use first” widget
 
 The small and medium widget is described as “See which pantry batches reach their printed dates first.” It shows “PANTRY ORBIT”, the earliest batch and its date and quantity; the medium version can also show “Next · [product] · [date]”. Tapping it opens that batch, or the shelves when empty. The empty widget says “An open shelf” and “Add your first batch in IcePantryOrbit.”
@@ -99,9 +92,9 @@ The small and medium widget is described as “See which pantry batches reach th
 - “Shelves” with quantities, storage locations, printed dates, search, and date filtering.
 - “Food catalog” search, barcode scanning, and “Enter label by hand”.
 - “Record a movement” for “Use” or “Discard”, with an optional “Add to shopping list”.
-- “Market list” with purchased items and Apple Watch check-off.
+- “Market list” with purchased items.
 - “Ledger” with seven-day entry counts and “Shelf history”.
-- “Use first” Apple Watch view and widget.
+- “Use first” widget.
 
 ## Behaviours that can look like bugs
 
@@ -113,7 +106,6 @@ The small and medium widget is described as “See which pantry batches reach th
 - “Record use” and “Record waste” are disabled unless the quantity is a whole number from 1 through the remaining batch quantity. “All” fills in the maximum. Recording the full quantity removes the batch from the shelves; the movement remains in “Ledger”.
 - The market add button is disabled for a blank item or an item already waiting in “To pick up”, ignoring letter case. A purchased item can be added again.
 - “To pick up”, “Purchased”, and “Shelf history” grow as items and movements are recorded. “Clear purchased items” removes checked-off items; individual items can also be removed.
-- On Apple Watch, purchase buttons are disabled until the connection is active. “Awaiting sync · [number]” remains until the update is reflected in the list.
 - The shelf, market, and ledger empty states disappear as the corresponding batches, shopping items, and movements are added.
 
 ## Starter content and resume
@@ -132,7 +124,7 @@ There is no login or account flow, in-app purchase, ads, analytics, account dele
 
 ## Data and support
 
-Pantry batches, shopping items, and history are stored on the device and shared with the app’s widget and paired Apple Watch. Product searches and barcode lookups contact Open Food Facts, and product images may be loaded online.
+Pantry batches, shopping items, and history are stored on the device and shared with the app’s widget. Product searches and barcode lookups contact Open Food Facts, and product images may be loaded online.
 
 There is no on-screen “Contact” or “Support” control.
 
@@ -144,7 +136,7 @@ The manual product form accepts nutrition and ingredient information from a pack
 
 ## Platform
 
-The app uses English and US locale formatting regardless of the device’s region setting. It supports iPhone and iPad, with a minimum of iOS 17.0. iPhone supports portrait and both landscape orientations; iPad also supports upside-down portrait. The companion Apple Watch app requires watchOS 10.0 or later.
+The app uses English and US locale formatting regardless of the device’s region setting. It supports iPhone and iPad, with a minimum of iOS 17.0. iPhone supports portrait and both landscape orientations; iPad also supports upside-down portrait.
 
 ## Category
 

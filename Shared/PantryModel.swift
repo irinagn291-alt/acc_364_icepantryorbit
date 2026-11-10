@@ -42,7 +42,6 @@ struct MarketItem: Codable, Identifiable, Hashable {
     var id = UUID()
     var name: String
     var bought = false
-    var watchPurchaseIDs: [UUID]?
 }
 
 struct PantryMovement: Codable, Identifiable {
