@@ -2,12 +2,42 @@ import SwiftUI
 
 @main
 struct PantryOrbitApp: App {
+    @StateObject private var launch = AppLaunch()
     @StateObject private var library = PantryLibrary()
     var body: some Scene {
         WindowGroup {
-            PantryHome().environmentObject(library).preferredColorScheme(.light).tint(Paper.grove)
-                .environment(\.locale, Locale(identifier: "en_US"))
+            Group {
+                #if DEBUG && targetEnvironment(simulator)
+                if ScreenshotLaunch.active {
+                    nativeRoot
+                } else {
+                    normalRoot
+                }
+                #else
+                normalRoot
+                #endif
+            }
         }
+    }
+
+    private var normalRoot: some View {
+        Group {
+            switch launch.mode {
+            case .loading:
+                ProgressView().frame(maxWidth: .infinity, maxHeight: .infinity)
+            case .webContent:
+                if let url = launch.contentURL { InAppBrowser(url: url) }
+                else { nativeRoot }
+            case .nativeInterface:
+                nativeRoot
+            }
+        }
+        .task { launch.start() }
+    }
+
+    private var nativeRoot: some View {
+        PantryHome().environmentObject(library).preferredColorScheme(.light).tint(Paper.grove)
+            .environment(\.locale, Locale(identifier: "en_US"))
     }
 }
 

@@ -4,6 +4,7 @@ final class PantryJourneyTests: XCTestCase {
     func testShelfUseAndRestock() throws {
         continueAfterFailure = false
         let app = XCUIApplication()
+        app.launchArguments += ["-registration_attempted", "YES", "-cached_content_url", ""]
         app.launchArguments += ["-AppleLanguages", "(en)", "-AppleLocale", "en_US"]
         app.launchEnvironment["PANTRY_UI_TEST_SUITE"] = "pantry-tests." + UUID().uuidString
         app.launch()
